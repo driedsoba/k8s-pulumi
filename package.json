@@ -1,0 +1,24 @@
+{
+  "name": "k8s-pulumi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "dev" : "nodemon app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/driedsoba/k8s-pulumi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/driedsoba/k8s-pulumi/issues"
+  },
+  "homepage": "https://github.com/driedsoba/k8s-pulumi#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
