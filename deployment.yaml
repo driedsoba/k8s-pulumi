@@ -19,3 +19,16 @@ spec:
         image: hello-k8s:v2
         ports:
         - containerPort: 3000
+        env:
+        - name: MESSAGE         # Create environment variable from ConfigMap
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: MESSAGE
+      
+        - name: API_KEY         # Create environment variable from Secret
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: FAKE_API_KEY
+        
